@@ -1,4 +1,11 @@
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Resume | Felipe Quinteros - Software Engineer",
+  description:
+    "Felipe Quinteros' Resume for a Software Engineer position. 3+ years of full stack development experience.",
+};
 
 interface Props {
   children: React.ReactNode;
