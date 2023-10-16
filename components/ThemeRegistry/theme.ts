@@ -1,3 +1,5 @@
+"use client";
+
 import { Open_Sans } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 
