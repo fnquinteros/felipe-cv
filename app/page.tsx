@@ -1,9 +1,16 @@
 "use client";
 
-import { CVHeader, SectionHeader } from "@/components";
-import { Box, Card } from "@mui/material";
-import Head from "next/head";
 import React from "react";
+import type { Metadata } from "next";
+import { Box, Card } from "@mui/material";
+
+import { CVHeader, SectionHeader } from "@/components";
+
+export const metadata: Metadata = {
+  title: "Resume | Felipe Quinteros - Software Engineer",
+  description:
+    "Felipe Quinteros' Resume for a Software Engineer position. 3+ years of full stack development experience.",
+};
 
 export default function Home() {
   return (
@@ -14,13 +21,6 @@ export default function Home() {
         minHeight: "100vh",
       }}
     >
-      <Head>
-        <title>Resume | Felipe Quinteros - Software Engineer</title>
-        <meta
-          name="description"
-          content="Felipe Quinteros' Resume for a Software Engineer position. 3+ years of full stack development experience."
-        />
-      </Head>
       <Card
         sx={{
           minHeight: "100%",
