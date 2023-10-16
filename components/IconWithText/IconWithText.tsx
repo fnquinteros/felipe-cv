@@ -17,7 +17,13 @@ interface Props {
 export default function IconWithText({ Icon, text, href }: Props) {
   const Container = ({ children, sx }: LinkProps | BoxProps) =>
     href ? (
-      <Link sx={sx} color="text.secondary" href={href} display="flex">
+      <Link
+        target="_blank"
+        sx={sx}
+        color="text.secondary"
+        href={href}
+        display="flex"
+      >
         {children}
       </Link>
     ) : (
